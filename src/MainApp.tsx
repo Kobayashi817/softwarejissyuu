@@ -1,13 +1,11 @@
-import 'react-native-reanimated'; // ← 最上部に！
-import 'react-native-gesture-handler';
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import AppNavigator from './navigation/AppNavigator';
+import Navigator from './navigation';
 
 export default function MainApp() {
   return (
     <NavigationContainer>
-      <AppNavigator />
+      <Navigator />
     </NavigationContainer>
   );
 }
